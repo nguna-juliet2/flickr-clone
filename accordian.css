@@ -1,0 +1,66 @@
+ body, html{
+    height: 100%;
+ }
+ body{
+    font-family: sans-serif;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+ }
+ .nav{
+    list-style: none;
+    border-radius: 10px;
+    background: #666;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    overflow: hidden;
+
+ }
+ .nav-item{
+    font-size: 20px;
+    background: #9701f0;
+    border-bottom: 1px solid rgb(20, 20, 20);
+ }
+ .nav-item:last-child{
+    border-bottom: none;
+
+ }
+ .nav-link, .submenue-link{
+    text-decoration: none;
+    padding: 16px 20px;
+    display: block;
+    color: #fff;
+
+}
+.nav-submenue{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s;
+    background: #3f2e49;
+
+}
+.nav-submenue:target{
+    max-height: 10rem;
+
+}
+.submenue-link{
+    font-size: 16px;
+    background: transparent;
+    transition: backgroud 0.2s ease-in;
+
+}
+.submenue-link:hover{
+    background: #36253f;
+}
+
+
+
+
+
+
+
+
+
